@@ -397,8 +397,8 @@ SOFTWARE.
 
 **Fatima Zohra Kajjout**
 - 📧 Email: fatimazohrakajjout@gmail.com
-- 💼 LinkedIn: [linkedin.com/in/fatima-kajjout](https://linkedin.com/in/fatima-kajjout)
-- 🐙 GitHub: [github.com/FatimaKajjout](https://github.com/FatimaKajjout)
+- 💼 LinkedIn: [linkedin.com/in/fatima-kajjout](https://linkedin.com/in/fatima-zohra-kajjout)
+- 🐙 GitHub: [github.com/FatimaKajjout](https://github.com/FATIM120)
 
 ---
 
