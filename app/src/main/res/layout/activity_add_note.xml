@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp"
+    android:orientation="vertical">
+
+    <!-- Champ pour saisir la matière -->
+    <EditText
+        android:id="@+id/etMatiere"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Matière"
+        android:padding="12dp"
+        android:minHeight="48dp"
+        android:inputType="text" />
+
+    <!-- Champ pour saisir le score -->
+    <EditText
+        android:id="@+id/etScore"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Score"
+        android:padding="12dp"
+        android:inputType="number" />
+
+    <!-- Bouton pour valider l'ajout de la note -->
+    <Button
+        android:id="@+id/btnValider"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Ajouter Note"
+        android:layout_marginTop="20dp"/>
+</LinearLayout>

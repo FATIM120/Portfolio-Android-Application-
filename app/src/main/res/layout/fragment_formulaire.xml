@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:fillViewport="true">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/root_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="20dp"
+        tools:context=".FormulaireFragment"
+        >
+
+        <!-- Image de profil -->
+        <ImageView
+            android:id="@+id/iv_profile"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/mine"
+            android:background="@drawable/round_image"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <!-- Champ Nom -->
+        <EditText
+            android:id="@+id/tv_nom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="48dp"
+            android:padding="10dp"
+            android:hint="Nom"
+            style="@style/EditTextStyle"
+            app:layout_constraintTop_toBottomOf="@id/iv_profile"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="8dp" />
+
+        <!-- Champ Prénom -->
+        <EditText
+            android:id="@+id/tv_prenom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="48dp"
+            android:padding="10dp"
+            android:hint="Prénom"
+            style="@style/EditTextStyle"
+            app:layout_constraintTop_toBottomOf="@id/tv_nom"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="8dp" />
+
+        <!-- Champ Classe -->
+        <EditText
+            android:id="@+id/tv_classe"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="48dp"
+            android:padding="10dp"
+            android:hint="Classe"
+            style="@style/EditTextStyle"
+            app:layout_constraintTop_toBottomOf="@id/tv_prenom"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="8dp" />
+
+        <!-- Champ Numéro -->
+        <EditText
+            android:id="@+id/tv_num"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="48dp"
+            android:padding="10dp"
+            android:hint="Numéro"
+            style="@style/EditTextStyle"
+            app:layout_constraintTop_toBottomOf="@id/tv_classe"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="8dp" />
+
+        <!-- Champ Remarques -->
+        <EditText
+            android:id="@+id/tv_remarque"
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:minHeight="48dp"
+            android:padding="10dp"
+            android:hint="Remarques"
+            android:gravity="top"
+            style="@style/EditTextStyle"
+            app:layout_constraintTop_toBottomOf="@id/tv_num"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="12dp" />
+
+        <!-- Boutons -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            style="@style/ButtonStyle"
+            app:layout_constraintTop_toBottomOf="@id/tv_remarque"
+            android:layout_marginTop="16dp">
+
+            <Button
+                android:id="@+id/btn_appeler"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                style="@style/ButtonStyle"
+                android:text="APPELER"
+                android:padding="12dp"
+                android:layout_marginEnd="4dp" />
+
+            <Button
+                android:id="@+id/btn_enregistrer"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Enregistrer"
+                style="@style/ButtonStyle"
+                android:padding="0.5dp"
+                android:layout_marginStart="4dp"
+                android:layout_marginEnd="4dp" />
+
+            <Button
+                android:id="@+id/btn_ajouter_note"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="AjouterNote"
+                style="@style/ButtonStyle"
+                android:padding="0dp"
+                android:layout_marginStart="4dp" />
+        </LinearLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

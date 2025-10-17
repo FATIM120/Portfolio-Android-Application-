@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Portfolio</string>
+    <string name="note_status">Icône du statut de la note</string>
+</resources>
